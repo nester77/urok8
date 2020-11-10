@@ -1,22 +1,51 @@
 package academy.belhard;
 
-public class Main {
+class Address {
+    private String city;
+    private String street;
+    private int numberOfHouse;
 
-    public static void main(String[] args) {
+    public Address (String city, String street, int numberOfHouse) {
+        this.city=city;
+        this.street=street;
+        this.numberOfHouse=numberOfHouse;
+    }
 
-        Address address1 = new Address("Los Angeles", "Beverly hills", 90210);
+    public void setCity (String city) {
+        this.city = city;
+    }
 
-        Person person1=new Person("Brad", "Pitt", address1);
+    public void setStreet (String street) {
+        this.street = street;
+    }
 
+    public void setNumberOfHouse (int numberOfHouse) {
+        this.numberOfHouse = numberOfHouse;
+    }
 
-        System.out.println(person1);
+    public String getCity() {
+        return city;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public int getNumberOfHouse() {
+        return numberOfHouse;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Address {Город: "+ city+", Улица: "+ street + ", Номер дома: "+numberOfHouse + "}";
     }
 
 
 }
 
 
-//    Создайте новый проект, залинкуйте его с удаленным репозиторием на GitHub, добавьте файл .gitignore и сделайте коммит (без .gitignore домашка не принимается)
+
 //        Создайте класс Address с тремя полями: город, улица и номер дома (числом). Все поля должны быть с модификатором private. Инициализация полей только в
 //        конструкторе. Создайте геттеры для каждого поля - если не помните, что такое геттеры :)
 //        Создайте класс Person с тремя полями: имя, фамилия и адрес. Поле адрес должно быть типа Address, которое создали в пункте 1. Инициализация полей
