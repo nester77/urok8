@@ -11,17 +11,6 @@ class Address {
         this.numberOfHouse=numberOfHouse;
     }
 
-    public void setCity (String city) {
-        this.city = city;
-    }
-
-    public void setStreet (String street) {
-        this.street = street;
-    }
-
-    public void setNumberOfHouse (int numberOfHouse) {
-        this.numberOfHouse = numberOfHouse;
-    }
 
     public String getCity() {
         return city;
@@ -38,7 +27,7 @@ class Address {
     @Override
     public String toString() {
 
-        return "Address {Город: "+ city+", Улица: "+ street + ", Номер дома: "+numberOfHouse + "}";
+        return "Город: "+ city+", Улица: "+ street + ", Номер дома: "+numberOfHouse;
     }
 
 
